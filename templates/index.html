@@ -1,0 +1,33 @@
+<style>
+  * {box-sizing: border-box;}
+  body {
+    background-color: #f1f1f1;
+    margin: 20px;}
+  .header {
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+  }
+  .card {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Aishwarya's Blog</h1>
+</div>
+
+<div class="row">
+  {% for post in posts reversed %}
+  <div class="card">
+    <a style="text-decoration: none; color:black" href="/post/{{post.id}}">
+      <h2>{{post.title}}</h2>
+      <h4>{{post.date}}</h4>
+      <p>{{post.text|truncatewords:20}}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>

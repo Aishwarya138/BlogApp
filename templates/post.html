@@ -1,0 +1,29 @@
+<style>
+  * {box-sizing: border-box;}
+  body {
+    background-color: #f1f1f1;
+    margin: 20px;}
+  .header {
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+  }
+  .card {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Aishwarya's Blog</h1>
+</div>
+
+<div class="row">
+  <div class="card">
+      <h1>{{posts.title}}</h1>
+      <h4>{{posts.date}}</h4>
+      <p>{{posts.text}}</p>
+  </div>
+</div>
