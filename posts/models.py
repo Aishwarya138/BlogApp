@@ -5,4 +5,4 @@ from datetime import datetime
 class Post(models.Model):
   title = models.CharField(max_length=100)
   date = models.DateTimeField(default=datetime.now, blank=True)
-  text = models.CharField(max_length=10000)
+  body = models.CharField(max_length=10000)
